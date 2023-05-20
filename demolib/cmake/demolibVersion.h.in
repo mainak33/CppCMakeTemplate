@@ -1,0 +1,2 @@
+#define messages_VERSION_MAJOR @CppTestingCIDemo_VERSION_MAJOR@
+#define messages_VERSION_MINOR @CppTestingCIDemo_VERSION_MINOR@
