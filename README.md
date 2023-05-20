@@ -9,6 +9,7 @@ CMAKE version 3.16 or higher
 - Subdirectory demoapp contains a demp application which uses this libary interface with #include <demolib/demolib.h>
 - Subdirectory test contains code to test this interface
 - The project also contains a Dockerfile showing how to build the library inside a docker container
+
 # Functionality
 Issue commands in the project parent folder
 ## Building 
