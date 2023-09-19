@@ -21,7 +21,7 @@ $ cmake --build build
 ```
 cmake --install build --prefix install 
 ```
-will install the library libdemolib.a at ./install/lib/ and the demolib includes at /install/include/demolib/demolib. The demoapp in build/demoapp consumes this library.
+will install the library libdemolib.a at ./install/lib/ and the demolib includes at /install/include/demolib/demolib.
 ## Running the demoapp
 ```
 $ ./build/demoapp/demoapp 

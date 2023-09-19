@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2023-09-19T11:23:41.957" name="AllTests">
-  <testsuite name="demoTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0" timestamp="2023-09-19T11:23:41.957">
-    <testcase name="BasicAssertions" file="/home/mmitra/Projects/CppCMakeTemplate/test/test.cpp" line="5" status="run" result="completed" time="0" timestamp="2023-09-19T11:23:41.957" classname="demoTest" />
+<testsuites tests="1" failures="0" disabled="0" errors="0" time="0" timestamp="2023-09-19T12:05:42.805" name="AllTests">
+  <testsuite name="demoTest" tests="1" failures="0" disabled="0" skipped="0" errors="0" time="0" timestamp="2023-09-19T12:05:42.805">
+    <testcase name="BasicAssertions" file="/home/mmitra/Projects/CppCMakeTemplate/test/test.cpp" line="5" status="run" result="completed" time="0" timestamp="2023-09-19T12:05:42.805" classname="demoTest" />
   </testsuite>
 </testsuites>
