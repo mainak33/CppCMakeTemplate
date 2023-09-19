@@ -26,22 +26,22 @@ set_target_properties(demolib PROPERTIES
 
 target_include_directories(demolib PUBLIC 
                            $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-                           $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}/demolib>)  
+                           $<INSTALL_INTERFACE:include/demolib>)  
 
 install(TARGETS demolib
         EXPORT demolibTargets
-        RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
-        ARCHIVE DESTINATION ${CMAKE_INSTALL_LIBDIR}
-        LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-        INCLUDES DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+        RUNTIME DESTINATION bin
+        ARCHIVE DESTINATION lib
+        LIBRARY DESTINATION lib
+        INCLUDES DESTINATION include)
 
 install(EXPORT demolibTargets
         FILE demolibTargets.cmake
         NAMESPACE demolib::
-        DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/demolib")
+        DESTINATION "lib/cmake/demolib")
 
 install(DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/include/demolib"
-        DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/demolib"
+        DESTINATION "include/demolib"
         FILES_MATCHING PATTERN "*.h*")
 
 include(CMakePackageConfigHelpers)
@@ -54,5 +54,5 @@ write_basic_package_version_file(
 install(FILES 
         "${CMAKE_CURRENT_SOURCE_DIR}/cmake/demolibConfig.cmake"
         "${CMAKE_CURRENT_SOURCE_DIR}/cmake/demolibConfigVersion.cmake"
-        DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/demolib")
+        DESTINATION "lib/cmake/demolib")
 

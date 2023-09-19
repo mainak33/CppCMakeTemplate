@@ -17,16 +17,16 @@ Issue commands in the project parent folder
 $ cmake -S . -B build
 $ cmake --build build
 ```
+## Installing libdemo
+```
+cmake --install build --prefix install 
+```
+will install the library libdemolib.a at ./install/lib/ and the demolib includes at /install/include/demolib/demolib. The demoapp in build/demoapp consumes this library.
 ## Running the demoapp
 ```
-$ ./build/test/demolibTests --gtest_output="xml:testreport.xml"
+$ ./build/demoapp/demoapp 
 ```
 ## Running the tests
 ```
 $ ./build/test/demolibTests --gtest_output="xml:testreport.xml"
 ```
-## Installing libdemo
-```
-cmake --install build --prefix install 
-```
-will install the library libdemolib.a at ./install/lib/
